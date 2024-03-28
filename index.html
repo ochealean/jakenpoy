@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors Game</title>
+        <link href="index.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="first_page">
+            <div class="title">Jack en Poy</div>
+            <div class="play_button" onclick="play()">PLAY</div>
+        </div>
+        <div id="second_page">
+            <h1 id="score" style="color: rgb(193, 32, 32);">Rock Paper Scissors</h1>
+            <div class="mgame">
+                <div class="choices">
+                    <button id="myButton1" onclick="playGame('rock')">Rock</button>
+                    <button id="myButton2" onclick="playGame('paper')">Paper</button>
+                    <button id="myButton3" onclick="playGame('scissors')">Scissors</button>
+                </div>
+                <p id="result"></p>
+                <div class="player_attack_pic">
+                    <div class="player_identifier">
+                        <p class="identifier">You</p>
+                        <p class="identifier"></p>
+                        <p class="identifier">Computer</p>
+                    </div>
+                    <div class="pic_container">
+                        <div id="player_pic" style="animation-name: off;"></div>
+                        <div id="vs">VS</div>
+                        <div id="computer_pic" style="animation-name: off;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,227 @@
+*{
+                margin:0px;
+                padding:0px;
+            }
+            #first_page{
+                background-color: #f6dcb4;
+                height: 100vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #second_page{
+                background-color: #f6dcb4;
+                font-family: Arial, sans-serif;
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100vh;
+            }
+
+            .mgame{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 80%;
+            }
+
+            .title{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(220, 50, 50);
+            }
+
+            .play_button
+            {
+                height: 50px; 
+                width: 130px; 
+                cursor: pointer;
+                border-radius: 100px;
+                background-color: #ffba5a;
+                color:azure;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 3px black solid;
+            }
+
+            #result{
+                display: flex;
+                align-items: center;
+                height: 50px;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Algerian;
+                color: rgb(251, 255, 21);
+                -webkit-text-stroke: 1px black;
+            }
+
+            button {
+                height: 50px; 
+                width: 250px; 
+                cursor: pointer;
+                border-radius: 100px;
+                transition: 0.3s;
+            }
+
+            button:hover {
+                background-color: #ffba5a;
+                color:azure;
+            }
+
+            .choices{
+                width: 900px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .player_attack_pic{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .player_identifier{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+
+            .identifier{
+                height: 50px; 
+                width: 300px; 
+                text-align: center;
+                font-size: 30px;
+                font-weight: bold;
+                font-family: Algerian;
+                color: rgb(193, 193, 193);
+                -webkit-text-stroke: 2px rgb(0, 0, 0);
+            }
+
+            .pic_container{
+                width: 900px;
+                height: 300px;
+                display: flex;
+            }
+
+            #player_pic{
+                background-image: url("rps.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px rgb(135, 135, 135) inset;
+                animation-duration: .1s;
+                animation-timing-function:  ease-in-out;
+                animation-iteration-count:  10;
+            }
+            #computer_pic{
+                background-image: url("rps.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+                box-shadow: 0px 0px 20px rgb(135, 135, 135) inset;
+                animation-duration: .1s;
+                animation-timing-function:  ease-in-out;
+                animation-iteration-count:  10;
+            }
+
+            @keyframes randomizer {
+                0%      {background-image: url("rock.jpg");}
+                50%     {background-image: url("paper.jpg");}
+                100%    {background-image: url("scissor.jpg");}
+            }
+
+            #vs{
+                width: 300px;
+                height: 300px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 50px;
+                font-weight: bold;
+                font-family: Algerian;
+                color: orange;
+                -webkit-text-stroke: 1px black;
+            }
+
+            @media (max-width:920px) {
+                #player_pic{
+                    width: 200px;
+                    height: 200px;
+                }
+                #computer_pic{
+                    width: 200px;
+                    height: 200px;
+                }
+                .identifier{
+                    height: 50px; 
+                    width: 200px; 
+                    font-size: 20px;
+                    -webkit-text-stroke: 1px rgb(0, 0, 0);
+                }
+                .pic_container{
+                    width: 600px;
+                    height: 200px;
+                }
+                #vs{
+                    width: 200px;
+                    height: 200px;
+                    font-size: 30px;
+                }
+                .choices{
+                    width: 600px;
+                    display: flex;
+                }
+                #result{
+                    font-size: 20px;
+                }
+            }
+            @media (max-width:750px) {
+                #player_pic{
+                    width: 120px;
+                    height: 120px;
+                }
+                #computer_pic{
+                    width: 120px;
+                    height: 120px;
+                }
+                .identifier{
+                    height: 50px; 
+                    width: 120px; 
+                    font-size: 20px;
+                    -webkit-text-stroke: 1px rgb(0, 0, 0);
+                }
+                .pic_container{
+                    width: 360px;
+                    height: 120px;
+                }
+                #vs{
+                    width: 120px;
+                    height: 120px;
+                    font-size: 30px;
+                }
+                .choices{
+                    width: 360px;
+                    display: flex;
+                }
+                #result{
+                    font-size: 20px;
+                }
+                button {
+                    height: 50px; 
+                    width: 100px; 
+                    cursor: pointer;
+                    border-radius: 100px;
+                    transition: 0.3s;
+                }
+                .mgame{
+                    flex-direction: column-reverse;
+                    height: 60%;
+                }
+            }
